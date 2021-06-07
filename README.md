@@ -1,2 +1,2 @@
 # post-origin-server
-post something to origin server , like alyun os
+post something to origin server , like aliyun os
