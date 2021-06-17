@@ -14,7 +14,7 @@ secret=
 
 #### 3.后台运行运行
 ```shell
-pid : nohup  java  -jar  test.jar &
+nohup  java  -jar  test.jar &
 ```
 #### 4.查看状态
 ```shell
