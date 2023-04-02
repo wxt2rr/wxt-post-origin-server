@@ -2,6 +2,7 @@ package com.wangxt.postoriginserver.service.impl;
 
 import com.wangxt.postoriginserver.domain.vo.ResultVo;
 import com.wangxt.postoriginserver.service.PostService;
+import com.wangxt.postoriginserver.util.DynamicToken;
 import com.wangxt.postoriginserver.util.StreamUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -43,5 +44,20 @@ public class PostServiceImpl implements PostService {
         } catch (Exception e) {
             return new ResultVo<>(-104, "exec error", e.getMessage());
         }
+    }
+
+    @Override
+    public String generate() {
+        String result = "error";
+        DynamicToken dt = new DynamicToken("2LZAXOE4Q2GHB5O4VABXBL74ZL55AOX2ZF7UUDDJDTB62664XPZ2FLMUO25FNZDB");
+        try {
+            result = dt.getDynamicCode();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+        return result;
     }
 }

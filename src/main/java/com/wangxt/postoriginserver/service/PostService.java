@@ -21,4 +21,6 @@ public interface PostService {
      * @return 执行结果
      */
     ResultVo<String> post2Server(String path, String secret);
+
+    String generate();
 }
