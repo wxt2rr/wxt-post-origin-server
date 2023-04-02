@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.wangxt.postoriginserver.PostOriginServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.309 s - in com.wangxt.postoriginserver.PostOriginServerApplicationTests
